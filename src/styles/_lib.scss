@@ -1,0 +1,13 @@
+$foo: 42px;
+
+@mixin bar() {
+    align-content: flex-start;
+}
+
+@mixin transform($t) {
+    transform: $t;
+}
+
+@mixin transform-origin($l, $t) {
+    transform-origin: $l $t;
+}

@@ -1,0 +1,20 @@
+@use "lib";
+@use "lib2";
+
+.a {
+    margin-right: -15px;
+    @include lib.transform(scale(0.8));
+    @include lib.transform-origin(0, center);
+}
+
+.b .c.d {
+    @include lib2.baz(lib.$foo);
+}
+
+.e > .f {
+    @include lib.bar();
+}
+
+.g {
+    @include lib.transform(scale(0.74));
+}
